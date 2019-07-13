@@ -42,7 +42,8 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         scores[activePlayer] += roundScore;
 
         // Update the UI
-        document.querySelector('#score' + activePlayer).textContent = scores[activePlayer];
+        console.log(activePlayer);
+        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check if player won the game
         if (scores[activePlayer] >= 100) {
